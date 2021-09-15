@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.video__bg
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.video__bg video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.effects
+{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.video_bg_con
+{
+    z-index: 2;
+    color: #fff;
+    font-size: 50px;
+}
+.overskrift
+{
+    text-align: center;
+    color: aquamarine;
+    position: relative;
+    top:100px;
+    font-family:Calibri;
+    font-size: xxx-large;
+}
+.tapok
+{
+    z-index:0;
+    width: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 50px;
+}
+.main_text
+{
+    position: relative;
+    top:4em;
+    color: white;
+    z-index: 2;
+    font-size: 50px;
+}
+.info
+{
+    z-index: 5;
+}
+.spis
+{
+    color: white;
+    position: relative;
+    top: 5em;
+    font-size: 50px;
+}
+.spis2
+{
+    color: white;
+    position: relative;
+    top: 10em;
+    font-size: 50px;
+}
+.spisok
+{
+    text-align: left;
+    color: white;
+    position: relative;
+    top: 7em;
+    font-size: 50px;
+    display: inline-block;
+
+
+}
+.spisok li
+{
+    list-style-type:decimal;
+}
+.inf_table
+{
+    z-index: 5;
+    color: white;
+    position: relative;
+    top: 9em;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border:solid 1px black;
+    width: 80%;
+}
+tr {
+
+    padding: 0px 10px;
+}
+.div_lol
+{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
