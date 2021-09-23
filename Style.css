@@ -2,126 +2,329 @@
 {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
-.video__bg
+body
 {
-    height: 100%;
+    background-repeat: no-repeat;
+}
+.bgimage
+{
+    z-index: -5;
     width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
 }
-.video__bg video
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-.effects
-{
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.6);
-}
 
-
-.video_bg_con
+.menu1
 {
-    z-index: 2;
-    color: #fff;
-    font-size: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon
+{
+    text-decoration: none;
+    color: firebrick;
+    font-size: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 2px solid;
+    margin: 0px 5px;
+    border-radius: 20px;
+    background:linear-gradient(135deg,rgb(0, 102,0),rgb(178,255,102));
 }
 .overskrift
 {
+    font-size: 50px;
+    color:white;
     text-align: center;
-    color: aquamarine;
-    position: relative;
-    top:100px;
-    font-family:Calibri;
-    font-size: xxx-large;
+    padding: 50px 0px;
+    text-shadow: 4px 1px 2px gray;
 }
-.tapok
+main
 {
-    z-index:0;
-    width: 100px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.main_text
+.tablediv
 {
-    position: relative;
-    top:4em;
+    background-color: rgba(0,0,0, 0.8);
+    width: 65%;
+    border-radius: 40px;
+}
+.table
+{
     color: white;
     z-index: 2;
-    font-size: 50px;
+    width: 100%;
+    border-spacing: 20px 15px;
+}
+td
+{
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+
+}
+.top
+{
+    color: darkgray;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.date
+{
+    background: linear-gradient( 45deg,black, darkblue);
+}
+table a
+{
+    text-decoration: none;
+    color: white;
+}
+.choose
+{
+    background: linear-gradient(45deg,darkred, orangered);
+}
+.choose:hover
+{
+    background: linear-gradient(45deg,darkcyan, yellow);
+    transition: 3s;
 }
 .info
 {
-    z-index: 5;
-}
-.spis
-{
-    color: white;
-    position: relative;
-    top: 5em;
-    font-size: 50px;
-}
-.spis2
-{
-    color: white;
-    position: relative;
-    top: 10em;
-    font-size: 50px;
-}
-.spisok
-{
-    text-align: left;
-    color: white;
-    position: relative;
-    top: 7em;
-    font-size: 50px;
-    display: inline-block;
 
-
+    background: linear-gradient(45deg, darkslategrey,lawngreen);
 }
-.spisok li
+.pildiv
 {
-    list-style-type:decimal;
+    width: 60px;
+    position: fixed;
+    top: 80vh;
+    left: 95%;
+    transform: rotate(90deg);
 }
-.inf_table
+.pil
 {
-    z-index: 5;
-    color: white;
-    position: relative;
-    top: 9em;
-    font-size: 60px;
-    text-align: center;
+    width: 60px;
+    transition: 1s linear;
+}
+.pil:hover
+{
+    width: 80px;
+    transition: 1s;
+}
+.albumer
+{
+    width: 90%;
+}
+.albumer nav
+{
     display: flex;
-    justify-content: center;
-    border:solid 1px black;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+    align-items: center;
+}
+.Albov
+{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.albumer nav img
+{
+    width: 250px;
+    padding: 20px 0;
+}
+.albumer a
+{
+    color: cornflowerblue;
+    text-decoration: none;
+    background: darkslategrey;
+    width: 100px;
+    border-radius: 20px;
+}
+#myVideo
+{
     width: 80%;
 }
-tr {
-
-    padding: 0px 10px;
+#myVideos
+{
+    width: 80%;
 }
-.div_lol
+
+
+.vidfile
 {
     text-align: center;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
 }
+.vidfile nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+}
+.vidfile a
+{
+    content: "Hello";
+    text-decoration: none;
+    color: blue;
+    border: 2px solid seagreen;
+    border-radius: 20px;
+    background-color: seagreen;
+    margin: 20px;
+}
+.Vidos
+{
+    color: white;
+}
+.Winers
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,153,0.5);
+    border-radius: 100px;
+}
+.Winers p
+{
+    margin: 40px;
+}
+ul
+{
+    font-size: 60px;
+    color: white;
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+footer img
+{
+    width: 50px;
+    margin: 20px;
+}
+footer
+{
+    font-size: 20px;
+    color: green;
+}
+footer p{
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#Play
+{
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+#Plays
+{
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+#WIN
+{
+    position: fixed;
+    opacity: 100%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+
+}
+.WIN2
+{
+    position: fixed;
+    z-index: -5;
+    opacity: 0%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+#winbut
+{
+
+    position: relative;
+    top:-100vh;
+    left: 44%;
+    z-index: 10;
+    width: 12%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: orangered;
+    color: black;
+}
+.wintext
+{
+    position: relative;
+    top:-110vh;
+    left:0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 20px 0;
+    color: #525252;
+    font-weight:bold;
+
+}
+.vindiv
+{
+    background: red;
+    z-index: 11;
+
+}
+
+.winfoto
+{
+    width:100%;
+}
+
+scroll-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+li:hover
+{
+    color: red;
+}
+

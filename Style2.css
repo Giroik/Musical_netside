@@ -1,0 +1,48 @@
+body
+{
+    background: linear-gradient(rgb(255, 255, 51),rgb(102, 255, 255));
+    height: 98vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.main
+{
+    border-radius: 50px;
+    background: linear-gradient(135deg, green, darkblue);
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input
+{
+    margin: 20px 0;
+    width: 40%;
+}
+#wright
+{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#send, #close
+{
+    width: 200px;
+    margin: 10px;
+    height: 50px;
+    background: darkblue;
+    border:2px solid;
+    border-radius: 20px;
+}
+#close
+{
+
+}
+#send:active
+{
+    background: red;
+}
